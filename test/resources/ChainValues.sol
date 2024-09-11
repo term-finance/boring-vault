@@ -1041,6 +1041,9 @@ contract ChainValues {
     }
 
     function _addMantleValues() private {
+        values[mantle]["deployerAddress"] = 0x5F2F11ad8656439d5C14d9B351f8b09cDaC2A02d.toBytes32();
+        values[mantle]["dev0Address"] = 0x0463E60C7cE10e57911AB7bD1667eaa21de3e79b.toBytes32();
+        values[mantle]["dev1Address"] = 0xf8553c8552f906C19286F21711721E206EE4909E.toBytes32();
         // ERC20
         values[mantle]["WETH"] = 0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111.toBytes32();
         values[mantle]["USDC"] = 0x09Bc4E0D864854c6aFB6eB9A9cdF58aC190D0dF9.toBytes32();
